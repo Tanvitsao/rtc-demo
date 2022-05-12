@@ -441,7 +441,7 @@ class WebrtcLibService {
         /* iceServer */
         this.iceServer = {
             iceServers: [{
-                    'urls': 'stun:lab.easontech.com.tw:3478' // Google's public STUN server
+                    'urls': 'stun:192.168.0.48:3478' // Google's public STUN server
                 }]
         };
         /** 連線狀態 */
@@ -651,7 +651,7 @@ class WebrtcLibService {
             };
             this.pc.oniceconnectionstatechange = (event) => {
                 console.log(event);
-                // console.log('ICE 伺服器狀態變更 => ', event.target.iceConnectionState);
+                console.log('ICE 伺服器狀態變更 => ', event.target.iceConnectionState);
             };
             // let the 'negotiationneeded' event trigger offer generation
             this.pc.onnegotiationneeded = () => {
