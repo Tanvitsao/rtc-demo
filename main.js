@@ -441,7 +441,7 @@ class WebrtcLibService {
         /* iceServer */
         this.iceServer = {
             iceServers: [{
-                    'urls': 'stun:192.168.0.48:3478' // Google's public STUN server
+                    'urls': 'stun:lab.easontech.com.tw:3478' // Google's public STUN server
                 }]
         };
         /** 連線狀態 */
